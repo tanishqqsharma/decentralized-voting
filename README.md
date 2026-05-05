@@ -1,14 +1,33 @@
-# Decentralized Voting System
+# 🗳️ Decentralized Voting System
 
-A blockchain-based voting dApp where each wallet can vote once per election. Admin can create elections, add candidates, and end elections.
+A full-stack decentralized application (dApp) that allows users to vote for candidates securely on the blockchain. Built with **Solidity**, **Hardhat**, and **React**.
 
-## Prerequisites
+## 🚀 Features
+- **Smart Contract:** Secure voting logic written in Solidity.
+- **Blockchain Backend:** Local Ethereum network powered by Hardhat.
+- **Modern UI:** Glassmorphism dashboard built with React and Vite.
+- **Wallet Integration:** Connects with MetaMask for on-chain transactions.
 
-- Node.js v16+
-- MetaMask browser extension
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Ethers.js, Vite
+- **Blockchain:** Solidity, Hardhat, Hardhat Ignition
+- **Wallet:** MetaMask
 
-## Setup & Deployment
+## 🏁 Getting Started
 
-1. **Install dependencies**
-   ```bash
-   npm install
+### 1. Clone the repository
+```bash
+
+cd blockchain
+npm install
+npx hardhat node
+In a second terminal, deploy the contract:
+
+Bash
+npx hardhat ignition deploy ./ignition/modules/Voting.js --network localhostSet up the Frontend
+Copy the deployed contract address into frontend/src/constants.js.
+
+Bash
+cd ../frontend
+npm install
+npm run dev
