@@ -24,7 +24,8 @@ npx hardhat node
 In a second terminal, deploy the contract:
 
 Bash
-npx hardhat ignition deploy ./ignition/modules/Voting.js --network localhostSet up the Frontend
+npx hardhat ignition deploy ./ignition/modules/Voting.js --network localhost
+Set up the Frontend
 Copy the deployed contract address into frontend/src/constants.js.
 
 Bash
